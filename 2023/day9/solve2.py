@@ -3,7 +3,6 @@ import sys
 
 def get_extrapolated_value(input: str) -> int:
     nums = list(reversed(list(map(int, input.strip().split(' ')))))
-    print(nums)
     diffs = [nums[i] - nums[i-1] for i in range(1, len(nums))]
     diff_sum = diffs[-1]
 

@@ -1,7 +1,7 @@
 import sys
 import itertools
 
-galaxy_offsets = int(sys.argv[1]) - 1
+galaxy_offsets = 1 if int(sys.argv[1]) == 1 else 999999
 
 with open(sys.argv[2], "r") as file:
     galaxies = []
